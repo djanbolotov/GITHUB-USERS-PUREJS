@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Api</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body data-new-gr-c-s-check-loaded="14.1008.0" data-gr-ext-installed="">
+<div class="error" id="error">
+</div>
+
+<div class="userInCache" id="userInCache">
+</div>
+<section class="container">
+    <div class="boxUsername">
+        <div class="row">
+            <div style="text-align: left; margin: 0 auto" class="col-sm-6 offset-sm-3" id="column">
+                <form id="form">
+                    <div class="form-group">
+                        <label class="list__title">Enter Username</label>
+                        <input type="text" name="gitUsername" class="form-control" id="gitUsername"
+                               placeholder="your username ...">
+                    </div>
+                    <button onclick="fetchProfile(event);" type="submit" class="btn btn-primary">Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="boxInfo" id="userInfo">
+
+        <div class="userSummary" id="imagePart">
+            <div class="onlyImage" id="onlyImage">
+                <h2 class="list__title" id="-">Image</h2>
+            </div>
+            <div class="onlyBio" id="onlyBio">
+
+            </div>
+        </div>
+
+        <div class="userSummary" id="info">
+            <h2 class="list__title" name="infoTilte">Info</h2>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</section>
+</body>
+</html>
